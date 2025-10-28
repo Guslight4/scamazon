@@ -28,6 +28,8 @@ export default function imageLoader({ src, width, quality }: LoaderProps): strin
 	// Return inline data URIs unchanged
 	if (src.startsWith('data:')) return src;
 
+	if(src.startsWith('/')) src = `/scamazon${src}`;
+
 	// Normalize quality and width
 	const q = typeof quality === 'string' ? parseInt(quality, 10) || 75 : quality ?? 75;
 	const w = typeof width === 'number' ? width : 0;
@@ -38,11 +40,11 @@ export default function imageLoader({ src, width, quality }: LoaderProps): strin
 
 	// If user passed a protocol-relative URL (//example.com) keep it as-is.
 	if (isAbsolute(src) || src.startsWith('/')) {
-		return `/scamazon${src}${separator}w=${w}&q=${q}`;
+		return `{src}${separator}w=${w}&q=${q}`;
 	}
 
 	// Fallback: return src unchanged
-	return `/scamazon${src}`;
+	return `{src}`;
 }
 
 // Also provide a named export for convenience
