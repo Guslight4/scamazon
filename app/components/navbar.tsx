@@ -6,6 +6,7 @@ import styles from './navbar.module.css';
 import { Search } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
+import sitePath from "../lib/data";
 
 export default function Navbar() {
     const router = useRouter();
@@ -24,14 +25,14 @@ export default function Navbar() {
             <div className="w-fit h-fit">
                 <Link href="/">
                     <Image
-                        src="/images/logo.png"
+                        src={`${sitePath}/images/logo.png`}
                         alt="scamazon"
                         width={250}
                         height={63}
                         className="block dark:hidden"
                     />
                     <Image
-                        src="/images/logo-dark.png"
+                        src={`${sitePath}/images/logo-dark.png`}
                         alt="scamazon"
                         width={250}
                         height={63}
