@@ -39,7 +39,6 @@ export default function Navbar() {
                         className="hidden dark:block"
                     />
                 </Link>
-                <p>{`${sitePath.sitepath}`}</p>
             </div>
 
             <form onSubmit={onSubmit} className={styles.searchInputContainer} role="search">
