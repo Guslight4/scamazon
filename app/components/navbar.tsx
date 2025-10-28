@@ -11,6 +11,7 @@ import sitePath from "../lib/config.json";
 export default function Navbar() {
     const router = useRouter();
     const [q, setQ] = useState('');
+    const sitePathState = useState(sitePath);
 
     function onSubmit(e: React.FormEvent) {
         e.preventDefault();
@@ -39,7 +40,7 @@ export default function Navbar() {
                         className="hidden dark:block"
                     />
                 </Link>
-                <p>{sitePath}</p>
+                <p>{sitePathState}</p>
             </div>
 
             <form onSubmit={onSubmit} className={styles.searchInputContainer} role="search">
