@@ -1,0 +1,28 @@
+{
+    "products": {
+        "pre-cracked-egg": {
+            "title": "Pre Cracked Egg",
+            "price": "696969696969696969",
+            "image": "/images/products/pre-cracked-egg.png",
+            "description": "A pre-cracked egg for your convenience."
+        },
+        "little-hero-adventure-racing": {
+            "title": "Little Hero Adventure Racing",
+            "price": "123456789012345678",
+            "image": "/images/products/little-hero-adventure-racing.jpg",
+            "description": "Join the little hero in an epic racing adventure."
+        },
+        "pizza": {
+            "title": "Pizza",
+            "price": "7492018302.13",
+            "image": "/images/products/pizza.jpeg",
+            "description": "A delicious cheese pizza with fresh toppings."
+        },
+        "scamazon-repeat": {
+            "title": "Scamazon Repeat",
+            "price": "999999999999999999999999",
+            "image": "/images/products/scamazon-repeat.png",
+            "description": "The scamazon repeat smart speaker, powered by scamazon alex."
+        }
+    }
+}
