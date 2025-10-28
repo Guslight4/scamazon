@@ -1,8 +1,6 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {
-    "ghcr.io/devcontainers/features/node:1": {}
-  },
+  "onCreateCommand": "npm install -g pnpm",
   "customizations": {
     "vscode": {
       "settings": {
