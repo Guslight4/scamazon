@@ -28,12 +28,6 @@ export default function imageLoader({ src, width, quality }: LoaderProps): strin
 	// Return inline data URIs unchanged
 	if (src.startsWith('data:')) return src;
 
-	if(src.startsWith('/')){
-		src = `/scamazon${src}`;
-	} else {
-		src = `/scamazon/${src}`;
-	}
-
 	// Normalize quality and width
 	const q = typeof quality === 'string' ? parseInt(quality, 10) || 75 : quality ?? 75;
 	const w = typeof width === 'number' ? width : 0;
