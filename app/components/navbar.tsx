@@ -6,7 +6,7 @@ import styles from './navbar.module.css';
 import { Search } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
-import sitePath from "../lib/data";
+import sitePath from "../lib/config";
 
 export default function Navbar() {
     const router = useRouter();
