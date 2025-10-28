@@ -25,21 +25,21 @@ export default function Navbar() {
             <div className="w-fit h-fit">
                 <Link href="/">
                     <Image
-                        src={`${sitePath}/images/logo.png`}
+                        src={`${sitePath.sitepath}/images/logo.png`}
                         alt="scamazon"
                         width={250}
                         height={63}
                         className="block dark:hidden"
                     />
                     <Image
-                        src={`${sitePath}/images/logo-dark.png`}
+                        src={`${sitePath.sitepath}/images/logo-dark.png`}
                         alt="scamazon"
                         width={250}
                         height={63}
                         className="hidden dark:block"
                     />
                 </Link>
-                <p>{`${sitePath.keys()}`}</p>
+                <p>{`${sitePath.sitepath}`}</p>
             </div>
 
             <form onSubmit={onSubmit} className={styles.searchInputContainer} role="search">
