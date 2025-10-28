@@ -1,5 +1,6 @@
 import products from '../products.json';
 import Image from "next/image";
+import sitePath from "../../lib/config.json";
 
 // Force static rendering for this dynamic route and use generateStaticParams
 export const dynamic = 'force-static';
@@ -34,7 +35,7 @@ export default async function ListingPage({ params }: Props) {
         <div className="h-full w-full">
             <div className="flex justify-between w-full h-full p-5">
                 <div className="flex flex-row gap-5">
-                    <Image src={product.image} alt={product.title} width={200} height={200} />
+                    <Image src={`${sitePath.sitepath}${product.image}`} alt={product.title} width={200} height={200} />
                     <div>
                         <p className="text-3xl">{product.title}</p>
                         <p>${product.price}</p>
