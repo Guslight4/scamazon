@@ -7,7 +7,7 @@
     top: 0;
     align-items: center;
     /* items-center */
-    background-color: #ffffff;
+    background-color: oklch(96.7% 0.003 264.542);
     /* bg-white */
     justify-content: space-between;
     /* justify-between */
@@ -16,6 +16,14 @@
     padding-right: 1.25rem;
     z-index: 10;
     /* keep above content */
+}
+
+.leftSideNavbar {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: fit-content;
+    gap: calc(var(--spacing) * 5);
 }
 
 .searchInputContainer {
@@ -55,7 +63,7 @@
 
 @media (prefers-color-scheme: dark) {
     .navbar {
-        background-color: #0a0a0a;
+        background-color: oklch(21% 0.034 264.665);
         /* dark background */
     }
 

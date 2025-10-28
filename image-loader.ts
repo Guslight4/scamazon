@@ -38,11 +38,11 @@ export default function imageLoader({ src, width, quality }: LoaderProps): strin
 
 	// If user passed a protocol-relative URL (//example.com) keep it as-is.
 	if (isAbsolute(src) || src.startsWith('/')) {
-		return `{src}${separator}w=${w}&q=${q}`;
+		return `${src}${separator}w=${w}&q=${q}`;
 	}
 
 	// Fallback: return src unchanged
-	return `{src}`;
+	return `${src}`;
 }
 
 // Also provide a named export for convenience

@@ -22,7 +22,7 @@ export default function Navbar() {
 
     return (
         <div className={styles.navbar}>
-            <div className="w-fit h-fit">
+            <div className={styles.leftSideNavbar}>
                 <Link href="/">
                     <Image
                         src={`${sitePath.sitepath}/images/logo.png`}
@@ -39,6 +39,7 @@ export default function Navbar() {
                         className="hidden dark:block"
                     />
                 </Link>
+                <Link href="/get-crime" className="text-semibold font-bold">Get Crime</Link>
             </div>
 
             <form onSubmit={onSubmit} className={styles.searchInputContainer} role="search">
