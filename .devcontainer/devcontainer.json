@@ -1,5 +1,4 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
   "onCreateCommand": "npm install -g pnpm",
   "customizations": {
     "vscode": {
