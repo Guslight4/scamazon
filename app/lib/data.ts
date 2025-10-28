@@ -1,1 +1,1 @@
-export default const sitePath = "/scamazon"; // change to empty string for deployment to root
+export default sitePath = "/scamazon"; // change to empty string for deployment to root
