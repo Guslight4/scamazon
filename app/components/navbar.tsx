@@ -25,14 +25,14 @@ export default function Navbar() {
             <div className="w-fit h-fit">
                 <Link href="/">
                     <Image
-                        src={`${sitePath}/images/logo.png`}
+                        src={`${sitePath.sitePath}/images/logo.png`}
                         alt="scamazon"
                         width={250}
                         height={63}
                         className="block dark:hidden"
                     />
                     <Image
-                        src={`${sitePath}/images/logo-dark.png`}
+                        src={`${sitePath.sitePath}/images/logo-dark.png`}
                         alt="scamazon"
                         width={250}
                         height={63}
