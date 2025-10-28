@@ -15,7 +15,7 @@ export default function SearchClient() {
 
   return (
     <div className="h-full w-full">
-      <div className="grid grid-cols-4 p-5">
+      <div className="flex flex-row justify-start p-4 w-full flex-wrap">
         {filteredEntries.map(([key, p]) => (
           <Listing
             key={key}

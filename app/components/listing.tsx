@@ -7,7 +7,7 @@ export default function Listing(props: props) {
     return (
         <>
             <Link href={`/product/${props.url}`}>
-                <div className="flex flex-col items-center border border-gray-300 rounded-md p-4 m-4 hover:shadow-lg w-fit h-75 justify-center">
+                <div className="flex flex-col items-center border border-gray-300 rounded-md p-4 m-4 hover:shadow-lg w-65 h-75 justify-center">
                     <Image src={`${sitePath.sitepath}${props.imageUrl}`} alt={props.name} width={200} height={200} />
                     <p className="p-2">{props.name}</p>
                     <p>${props.price}</p>
