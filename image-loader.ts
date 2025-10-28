@@ -42,7 +42,7 @@ export default function imageLoader({ src, width, quality }: LoaderProps): strin
 	}
 
 	// Fallback: return src unchanged
-	return src;
+	return `/scamazon${src}`;
 }
 
 // Also provide a named export for convenience
