@@ -29,14 +29,28 @@ export default function Navbar() {
                         alt="scamazon"
                         width={250}
                         height={63}
-                        className="block dark:hidden"
+                        className="hidden md:block dark:md:hidden"
                     />
                     <Image
                         src={`${sitePath.sitepath}/images/logo-dark.png`}
                         alt="scamazon"
                         width={250}
                         height={63}
-                        className="hidden dark:block"
+                        className="hidden dark:md:block"
+                    />
+                    <Image
+                        src={`${sitePath.sitepath}/images/logo-mobile.png`}
+                        alt="scamazon"
+                        width={63}
+                        height={63}
+                        className="block dark:hidden md:hidden dark:md:hidden"
+                    />
+                    <Image
+                        src={`${sitePath.sitepath}/images/logo-mobile-dark.png`}
+                        alt="scamazon"
+                        width={63}
+                        height={63}
+                        className="hidden dark:block dark:md:hidden"
                     />
                 </Link>
                 <Link href="/get-crime" className="text-semibold font-bold">Get Crime</Link>
