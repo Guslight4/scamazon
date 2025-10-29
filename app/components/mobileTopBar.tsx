@@ -17,7 +17,7 @@ export default function MobileTopBar() {
         router.push(url);
     }
     return (
-        <div className="flex h-full flex-col px-3 py-4 bg-gray-900 gap-4 hidden" id="mobile-top-bar">
+        <div className="flex h-full flex-col px-3 py-4 bg-gray-100 dark:bg-gray-900 gap-4 hidden" id="mobile-top-bar">
             <form onSubmit={onSubmit} className={styles.searchInputContainer} role="search">
                 <Search />
                 <input
