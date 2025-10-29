@@ -17,20 +17,20 @@ export default function MobileTopBar() {
         router.push(url);
     }
     return (
-        <div className="flex h-full flex-col px-3 py-4 bg-gray-100 dark:bg-gray-900 gap-4 hidden" id="mobile-top-bar">
-            <form onSubmit={onSubmit} className={styles.searchInputContainer} role="search">
-                <Search />
-                <input
-                    type="search"
-                    value={q}
-                    onChange={(e) => setQ(e.target.value)}
-                    className={styles.searchInput}
-                    placeholder="Search"
-                    aria-label="Search products"
-                />
-            </form>
-            <Link href="/">Home</Link>
-            <Link href="/get-crime">Get Crime</Link>
-        </div>
-    );
-}
+        <div className="fixed left-0 right-0 top-20 z-50 flex flex-col px-3 py-3 bg-gray-100 dark:bg-gray-900 gap-3 shadow-md md:hidden" id="mobile-top-bar">
+             <form onSubmit={onSubmit} className={styles.searchInputContainer} role="search">
+                 <Search />
+                 <input
+                     type="search"
+                     value={q}
+                     onChange={(e) => setQ(e.target.value)}
+                     className={styles.searchInput}
+                     placeholder="Search"
+                     aria-label="Search products"
+                 />
+             </form>
+             <Link href="/">Home</Link>
+             <Link href="/get-crime">Get Crime</Link>
+         </div>
+     );
+ }
