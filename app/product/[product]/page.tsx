@@ -33,7 +33,7 @@ export default async function ListingPage({ params }: Props) {
 
     return (
         <div className="h-full w-full">
-            <div className="flex justify-between w-full h-full p-5">
+            <div className="flex justify-between w-full h-full p-5 flex-wrap">
                 <div className="flex flex-row gap-5">
                     <Image src={`${sitePath.sitepath}${product.image}`} alt={product.title} width={200} height={200} />
                     <div>
