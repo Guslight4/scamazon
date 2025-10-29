@@ -24,10 +24,10 @@ export default function Navbar() {
 
     return (
         <div className={styles.navbar}>
-            <button onClick={toggleMobileTopBar} className="block md:hidden">
+            <div className={styles.leftSideNavbar}>
+                <button onClick={toggleMobileTopBar} className="block md:hidden">
                 <Menu size={32} />
             </button>
-            <div className={styles.leftSideNavbar}>
                 <Link href="/">
                     <Image
                         src={`${sitePath.sitepath}/images/logo.png`}
