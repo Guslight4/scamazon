@@ -16,6 +16,7 @@
     padding-right: 1.25rem;
     z-index: 10;
     /* keep above content */
+    gap: calc(var(--spacing) * 5);
 }
 
 .leftSideNavbar {

@@ -3,10 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from './navbar.module.css';
-import { Search } from 'lucide-react';
+import { Search, Menu } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import sitePath from "../lib/config.json";
+import toggleMobileTopBar from "./sideBarHidden";
 
 export default function Navbar() {
     const router = useRouter();
@@ -20,8 +21,12 @@ export default function Navbar() {
         router.push(url);
     }
 
+
     return (
         <div className={styles.navbar}>
+            <button onClick={toggleMobileTopBar} className="block md:hidden">
+                <Menu size={32} />
+            </button>
             <div className={styles.leftSideNavbar}>
                 <Link href="/">
                     <Image
@@ -53,7 +58,7 @@ export default function Navbar() {
                         className="hidden dark:block dark:md:hidden"
                     />
                 </Link>
-                <Link href="/get-crime" className="text-semibold font-bold">Get Crime</Link>
+                <Link href="/get-crime" className="hidden md:block text-semibold font-bold">Get Crime</Link>
             </div>
 
             <form onSubmit={onSubmit} className={styles.searchInputContainer} role="search">
@@ -68,5 +73,6 @@ export default function Navbar() {
                 />
             </form>
         </div>
+
     );
 }
